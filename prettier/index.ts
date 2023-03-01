@@ -11,4 +11,4 @@ const config: PrettierConfig = {
   parser: "typescript",
 }
 
-export default config
+module.exports = config

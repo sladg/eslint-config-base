@@ -19,4 +19,4 @@ const config: ESLintConfig = {
   },
 }
 
-export default config
+module.exports = config

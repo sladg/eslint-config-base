@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.21.1",
+    "@types/node": "^18.14.2",
     "@types/prettier": "^2.7.2",
     "tsup": "^6.6.3"
   }
