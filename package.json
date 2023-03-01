@@ -1,0 +1,37 @@
+{
+  "name": "@sladg/eslint-config-base",
+  "version": "0.0.1",
+  "description": "Reusable set of rules for eslint (node) projects.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sladg/eslint-config"
+  },
+  "scripts": {
+    "commit": "npx --package cz-emoji-conventional --package commitizen -- cz",
+    "release": "npx --package @sladg/release-utils utils shipit --gitUser @sladg --gitEmail jan@ssoukup.com --changelog"
+  },
+  "files": [
+    "core",
+    "next",
+    "node",
+    "prettier.js"
+  ],
+  "author": "Jan Soukup <jan@ssoukup.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^8.35.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint-config-next": "^13.2.3",
+    "eslint-define-config": "^1.15.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.18.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  }
+}
