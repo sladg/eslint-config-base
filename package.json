@@ -4,16 +4,16 @@
   "description": "Reusable set of rules for eslint (node) projects.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sladg/eslint-config"
+    "url": "https://github.com/sladg/eslint-config-base"
   },
   "scripts": {
+    "build": "tsup next/index.ts -d next && tsup node/index.ts -d node",
     "commit": "npx --package cz-emoji-conventional --package commitizen -- cz",
     "release": "npx --package @sladg/release-utils utils shipit --gitUser @sladg --gitEmail jan@ssoukup.com --changelog"
   },
   "files": [
-    "core",
-    "next",
-    "node",
+    "next/index.js",
+    "node/index.js",
     "prettier.js"
   ],
   "author": "Jan Soukup <jan@ssoukup.com>",
@@ -33,5 +33,8 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sonarjs": "^0.18.0",
     "eslint-plugin-unused-imports": "^2.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^6.6.3"
   }
 }
