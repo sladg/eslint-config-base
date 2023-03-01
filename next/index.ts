@@ -1,7 +1,6 @@
-import { defineConfig } from "eslint-define-config"
-import { defaultIgnorePatterns, defaultRules, defaultExtends, defaultParser, defaultPlugins } from "../core"
+import { defaultIgnorePatterns, defaultRules, defaultExtends, defaultParser, defaultPlugins, ESLintConfig } from "../core"
 
-const config = defineConfig({
+const config: ESLintConfig = {
   parser: defaultParser,
   extends: [...defaultExtends],
   plugins: [...defaultPlugins],
@@ -18,6 +17,6 @@ const config = defineConfig({
       version: "detect",
     },
   },
-})
+}
 
 export default config

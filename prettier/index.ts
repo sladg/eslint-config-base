@@ -1,4 +1,6 @@
-module.exports = {
+import { Config as PrettierConfig } from "prettier"
+
+const config: PrettierConfig = {
   trailingComma: "all",
   semi: false,
   singleQuote: true,
@@ -7,5 +9,6 @@ module.exports = {
   arrowParens: "always",
   tabWidth: 2,
   parser: "typescript",
-  printWidth: 140,
-};
+}
+
+export default config

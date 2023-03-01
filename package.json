@@ -7,14 +7,14 @@
     "url": "https://github.com/sladg/eslint-config-base"
   },
   "scripts": {
-    "build": "tsup next/index.ts -d next && tsup node/index.ts -d node",
+    "build": "tsup next/index.ts -d next && tsup node/index.ts -d node && tsup prettier/index.ts -d prettier",
     "commit": "npx --package cz-emoji-conventional --package commitizen -- cz",
     "release": "npx --package @sladg/release-utils utils shipit --gitUser @sladg --gitEmail jan@ssoukup.com --changelog"
   },
   "files": [
     "next/index.js",
     "node/index.js",
-    "prettier.js"
+    "prettier/index.js"
   ],
   "author": "Jan Soukup <jan@ssoukup.com>",
   "license": "MIT",
@@ -27,14 +27,17 @@
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint-config-next": "^13.2.3",
-    "eslint-define-config": "^1.15.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sonarjs": "^0.18.0",
     "eslint-plugin-unused-imports": "^2.0.0"
   },
   "devDependencies": {
+    "@types/eslint": "^8.21.1",
+    "@types/prettier": "^2.7.2",
     "tsup": "^6.6.3"
   }
 }

@@ -1,4 +1,6 @@
-import { ESLintConfig } from "eslint-define-config"
+import { Linter } from "eslint"
+
+export type ESLintConfig = Linter.Config
 
 export const defaultIgnorePatterns: ESLintConfig["ignorePatterns"] = ["node_modules/**"]
 

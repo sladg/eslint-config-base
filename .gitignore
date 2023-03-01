@@ -1,1 +1,4 @@
 node_modules
+node/index.js
+next/index.js
+prettier/index.js
