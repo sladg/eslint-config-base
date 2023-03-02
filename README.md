@@ -2,7 +2,21 @@
 
 Opinionated configuration for eslint & prettier.
 
+- [Eslint config](#eslint-config)
+  - [Usage](#usage)
+    - [Next](#next)
+    - [Node](#node)
+    - [Prettier](#prettier)
+
 ## Usage
+
+Install via npm:
+
+```sh
+npm install @sladg/eslint-config-base@latest --save-dev
+```
+
+Use latest to ensure you are always up-to-date with current configuration.
 
 In your config file.
 

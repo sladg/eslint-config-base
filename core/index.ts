@@ -30,4 +30,56 @@ export const defaultRules: ESLintConfig["rules"] = {
   "@typescript-eslint/no-use-before-define": 0,
   "@typescript-eslint/no-non-null-assertion": 0,
   "@typescript-eslint/no-unused-vars": 0, // Use TS compiler option instead
+
+  // Disable importing banned packages. See: https://usertech.atlassian.net/wiki/spaces/DEV/pages/3003154445/Banned+packages
+  "no-restricted-imports": [
+    "error",
+    {
+      paths: [
+        {
+          name: "react-final-form",
+          message: "Use hook form instead of final form",
+        },
+        {
+          name: "moment",
+          message: "Use datejs instead of moment",
+        },
+        {
+          name: "ramda",
+          message: "Use lodash instead of ramda",
+        },
+        {
+          name: "rxjs",
+          message: "Stay away from RXJS!",
+        },
+        {
+          name: "jquery",
+          message: "Use vanilla JS instead of jQuery",
+        },
+        {
+          name: "lerna",
+          message: "Use turborepo workspaces instead of lerna",
+        },
+        {
+          name: "yarn",
+          message: "Use npm instead of yarn",
+        },
+      ],
+      patterns: [
+        {
+          name: "@lingui/*",
+          message: "Use next-intl instead of lingui",
+        },
+      ],
+    },
+  ],
+
+  // Sonar's configuration. Sniff codesmells and report them as errors.
+  "sonarjs/cognitive-complexity": ["error", 15],
+  "sonarjs/no-duplicate-string": "error",
+  "sonarjs/no-identical-functions": "error",
+  "sonarjs/no-small-switch": "error",
+  "sonarjs/no-unused-collection": "error",
+  "sonarjs/no-use-of-empty-return-value": "warn",
+  "sonarjs/prefer-immediate-return": "error",
 }
