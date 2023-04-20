@@ -26,7 +26,11 @@ In `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: ["@sladg/eslint-config-base/next"],
+  ...require("@sladg/eslint-config-base/next"),
+  rules: {
+    ...require("@sladg/eslint-config-base/node").rules,
+    "no-console": "off",
+  },
 }
 ```
 
@@ -36,7 +40,11 @@ In `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: ["@sladg/eslint-config-base/next"],
+  ...require("@sladg/eslint-config-base/node"),
+  rules: {
+    ...require("@sladg/eslint-config-base/node").rules,
+    "no-console": "off",
+  },
 }
 ```
 

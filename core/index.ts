@@ -11,6 +11,8 @@ export const defaultExtends = ["prettier", "plugin:sonarjs/recommended"]
 export const defaultPlugins = ["prettier", "@typescript-eslint", "unused-imports", "simple-import-sort", "import", "sonarjs"]
 
 export const defaultRules: ESLintConfig["rules"] = {
+  "prettier/prettier": "error",
+
   //
   // Disable rules provided by other configs
   //
