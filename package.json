@@ -1,6 +1,6 @@
 {
   "name": "@sladg/eslint-config-base",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Reusable set of rules for eslint (node) projects.",
   "repository": {
     "type": "git",
