@@ -35,7 +35,8 @@ export const defaultRules: ESLintConfig["rules"] = {
   "@typescript-eslint/no-unused-vars": 0, // Use TS compiler option instead
 
   // Disable importing banned packages. See: https://usertech.atlassian.net/wiki/spaces/DEV/pages/3003154445/Banned+packages
-  "no-restricted-imports": [
+  "no-restricted-imports": "off",
+  "@typescript-eslint/no-restricted-imports": [
     "error",
     {
       paths: [
@@ -45,7 +46,7 @@ export const defaultRules: ESLintConfig["rules"] = {
         },
         {
           name: "moment",
-          message: "Use datejs instead of moment",
+          message: "Use day.js instead of moment",
         },
         {
           name: "ramda",
@@ -70,7 +71,7 @@ export const defaultRules: ESLintConfig["rules"] = {
       ],
       patterns: [
         {
-          name: "@lingui/*",
+          group: ["@lingui/*"],
           message: "Use next-intl instead of lingui",
         },
       ],
