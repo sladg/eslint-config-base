@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v0.2.6](https://github.com/sladg/eslint-config-base/compare/v0.2.5...v0.2.6)
+
+* 🐛 fix(imports): added rules to enforce import sorting [[bcb9e5bba8c078ec521f8a02d362a3bdb955b12b](https://github.com/sladg/eslint-config-base/commit/bcb9e5bba8c078ec521f8a02d362a3bdb955b12b))]
+
+
 ## [v0.2.5](https://github.com/sladg/eslint-config-base/compare/v0.2.4...v0.2.5)
 
 * 🐛 fix(typescript): allow for using ts^5, fixed typo in documentation, added prettier rule [[d5cd217d13d5617cb1d22c1ea886652f230df194](https://github.com/sladg/eslint-config-base/commit/d5cd217d13d5617cb1d22c1ea886652f230df194))]
@@ -34,6 +39,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* 🐛 fix(imports): added rules to enforce import sorting [[bcb9e5bba8c078ec521f8a02d362a3bdb955b12b](https://github.com/sladg/eslint-config-base/commit/bcb9e5bba8c078ec521f8a02d362a3bdb955b12b))]
 * 🐛 fix(typescript): allow for using ts^5, fixed typo in documentation, added prettier rule [[d5cd217d13d5617cb1d22c1ea886652f230df194](https://github.com/sladg/eslint-config-base/commit/d5cd217d13d5617cb1d22c1ea886652f230df194))]
 * 🐛 fix(imports): disable rectricted imports rule [[2a3be3ecfc1610da5fe5ba2dba42280c77a3e7d0](https://github.com/sladg/eslint-config-base/commit/2a3be3ecfc1610da5fe5ba2dba42280c77a3e7d0))]
 * 🐛 fix(banned packages): added eslint rule to discourage importing packages we don't support using [[3ecfbd45d87cca66b942bd3bf44040f5d1404799](https://github.com/sladg/eslint-config-base/commit/3ecfbd45d87cca66b942bd3bf44040f5d1404799))]
