@@ -115,4 +115,16 @@ export const defaultRules: ESLintConfig["rules"] = {
   "import/first": "error",
   "import/newline-after-import": "error",
   "import/no-duplicates": "error",
+
+  // Enable auto-fix of unused imports and warning for unused variables (extra on top of TS Compiler to allow auto-fix)
+  "unused-imports/no-unused-imports": "error",
+  "unused-imports/no-unused-vars": [
+    "warn",
+    {
+      vars: "all",
+      varsIgnorePattern: "^_",
+      args: "after-used",
+      argsIgnorePattern: "^_",
+    },
+  ],
 }
