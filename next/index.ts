@@ -2,7 +2,7 @@ import { defaultIgnorePatterns, defaultRules, defaultExtends, defaultParser, def
 
 const config: ESLintConfig = {
   parser: defaultParser,
-  extends: [...defaultExtends],
+  extends: [...defaultExtends, "plugin:@next/next/recommended"],
   plugins: [...defaultPlugins],
   ignorePatterns: defaultIgnorePatterns,
   env: {
