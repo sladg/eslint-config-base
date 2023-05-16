@@ -6,13 +6,39 @@ export const defaultIgnorePatterns: ESLintConfig["ignorePatterns"] = ["node_modu
 
 export const defaultParser: ESLintConfig["parser"] = "@typescript-eslint/parser"
 
-export const defaultExtends = ["prettier", "plugin:sonarjs/recommended"]
+export const defaultExtends = ["prettier"]
 
 export const defaultPlugins = ["prettier", "@typescript-eslint", "unused-imports", "simple-import-sort", "import", "sonarjs"]
 
 export const defaultRules: ESLintConfig["rules"] = {
+  //
   // Allow eslint to use prettier internally for formatting.
-  "prettier/prettier": "error",
+  //
+  "prettier/prettier": [
+    "error",
+    {
+      tabWidth: 2,
+      // printWidth: 120,
+      singleQuote: true,
+      trailingComma: "all",
+      bracketSpacing: true,
+      jsxBracketSameLine: false,
+      semi: false,
+      arrowParens: "always",
+      endOfLine: "lf",
+      quoteProps: "consistent",
+      useTabs: false,
+      insertPragma: false,
+      requirePragma: false,
+      proseWrap: "preserve",
+    },
+    {
+      usePrettierrc: false,
+    },
+  ],
+
+  "array-bracket-newline": ["error", "consistent"],
+  "array-element-newline": ["error", "consistent"],
 
   //
   // Disable rules provided by other configs
@@ -21,6 +47,9 @@ export const defaultRules: ESLintConfig["rules"] = {
   "no-unused-vars": 0, // Provided by TypeScript
   "no-undef": 0, // Provided by TypeScript
   "no-void": 0,
+  "max-len": 0, // Enforces for eveything, we still want to keep it for long strings and other edge cases.
+  "arrow-body-style": 0, // Provided by Prettier
+  "prefer-arrow-callback": 0, // Provided by Prettier
 
   //
   // Disable opinionated rules from @typescript-eslint
@@ -79,13 +108,36 @@ export const defaultRules: ESLintConfig["rules"] = {
   ],
 
   // Sonar's configuration. Sniff codesmells and report them as errors.
-  "sonarjs/cognitive-complexity": ["error", 15],
-  "sonarjs/no-duplicate-string": "error",
-  "sonarjs/no-identical-functions": "error",
-  "sonarjs/no-small-switch": "error",
+  // This is Sonar's recommended list (taken from plugin:sonarjs/recommended) & some of our own.
+  "sonarjs/cognitive-complexity": ["error", 20],
+  "sonarjs/no-duplicate-string": ["error", 8], // Increased from 3 to 8.
+  "sonarjs/no-collapsible-if": "error",
+  "sonarjs/no-collection-size-mischeck": "error",
+  "sonarjs/elseif-without-else": "error", // Rule to enforce `else` in case `else if` is used.
+  "sonarjs/no-duplicated-branches": "warn", // kinda specific, not used mostly
+  "sonarjs/no-element-overwrite": "error",
+  "sonarjs/no-empty-collection": "off", // Sometimes, we push to empty collections and want to itterate even if empty.
+  "sonarjs/no-extra-arguments": "error", // Extra arguments are not allowed for functions.
+  "sonarjs/no-gratuitous-expressions": "error",
+  "sonarjs/no-identical-conditions": "error",
+  "sonarjs/no-identical-expressions": "error",
+  "sonarjs/no-identical-functions": "off", // Hard to comply by for big components and functions.
+  "sonarjs/no-inverted-boolean-check": "error", // makes reading confusing as hell
+  "sonarjs/no-nested-switch": "error",
+  "sonarjs/no-nested-template-literals": "warn", // For styled-components and similar, it's hard to avoid.
+  "sonarjs/no-one-iteration-loop": "error",
+  "sonarjs/no-redundant-boolean": "error",
+  "sonarjs/no-redundant-jump": "error",
+  "sonarjs/no-same-line-conditional": "error",
+  "sonarjs/no-small-switch": "error", // use If-ElseIf-Else instead
   "sonarjs/no-unused-collection": "error",
-  "sonarjs/no-use-of-empty-return-value": "warn",
-  "sonarjs/prefer-immediate-return": "error",
+  "sonarjs/no-use-of-empty-return-value": "error",
+  "sonarjs/no-useless-catch": "error",
+  "sonarjs/non-existent-operator": "error",
+  "sonarjs/prefer-immediate-return": "off", // For debugging and development, better to have a breakpoint.
+  "sonarjs/prefer-object-literal": "error", // we don't want to use new Object() or Object.assign() for creating objects.
+  "sonarjs/prefer-single-boolean-return": "error",
+  "sonarjs/no-ignored-return": "error",
 
   // Ensure we are sorting imports across files.
   // Certain sorting is important for refactorings as it makes mest everywhere unless checked.

@@ -50,19 +50,21 @@ module.exports = {
 
 ### Prettier
 
-In `package.json` add:
+Prettier is part of Eslint's configuration, see: https://github.com/prettier/eslint-plugin-prettier#options
 
-```json
-{
-  "prettier": "@sladg/eslint-config-base/prettier"
-}
-```
-
-In `.prettierrc.js`:
+In `.eslintrc.js`:
 
 ```js
 module.exports = {
-  ...require("@sladg/eslint-config-base/prettier"),
-  semi: false,
+  ...require("@sladg/eslint-config-base/node"),
+  rules: {
+    ...require("@sladg/eslint-config-base/node").rules,
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
+  },
 }
 ```

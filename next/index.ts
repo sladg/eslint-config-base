@@ -1,8 +1,9 @@
 import { defaultIgnorePatterns, defaultRules, defaultExtends, defaultParser, defaultPlugins, ESLintConfig } from "../core"
 
 const config: ESLintConfig = {
+  // @TODO: Add NextJS extension here so we overcome warnings during lint.
   parser: defaultParser,
-  extends: [...defaultExtends, "plugin:@next/next/recommended"],
+  extends: [...defaultExtends],
   plugins: [...defaultPlugins],
   ignorePatterns: defaultIgnorePatterns,
   env: {

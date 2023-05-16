@@ -7,14 +7,13 @@
     "url": "https://github.com/sladg/eslint-config-base"
   },
   "scripts": {
-    "build": "tsup next/index.ts -d next && tsup node/index.ts -d node && tsup prettier/index.ts -d prettier",
+    "build": "tsup next/index.ts -d next && tsup node/index.ts -d node",
     "commit": "npx --package cz-emoji-conventional --package commitizen -- cz",
     "release": "npx --package @sladg/release-utils utils shipit --gitUser @sladg --gitEmail jan@ssoukup.com --changelog"
   },
   "files": [
     "next/index.js",
-    "node/index.js",
-    "prettier/index.js"
+    "node/index.js"
   ],
   "author": "Jan Soukup <jan@ssoukup.com>",
   "license": "MIT",
