@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v0.4.1](https://github.com/sladg/eslint-config-base/compare/v0.4.0...v0.4.1)
+
+* 🧹 chore(dependencies): upgraded to latest versions [[037d64feb14f50b2339f8861b4577ce664fed5ac](https://github.com/sladg/eslint-config-base/commit/037d64feb14f50b2339f8861b4577ce664fed5ac))]
+
+
 ## [v0.4.0](https://github.com/sladg/eslint-config-base/compare/v0.3.0...v0.4.0)
 
 * ✨ feat(next): add rule for nextjs to resolve `next lint` warning about missing config [[b1db7a7f4af14044a2f8ccf0038948580d1849c8](https://github.com/sladg/eslint-config-base/commit/b1db7a7f4af14044a2f8ccf0038948580d1849c8))]
@@ -54,6 +59,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* 🧹 chore(dependencies): upgraded to latest versions [[037d64feb14f50b2339f8861b4577ce664fed5ac](https://github.com/sladg/eslint-config-base/commit/037d64feb14f50b2339f8861b4577ce664fed5ac))]
 * ✨ feat(next): add rule for nextjs to resolve `next lint` warning about missing config [[b1db7a7f4af14044a2f8ccf0038948580d1849c8](https://github.com/sladg/eslint-config-base/commit/b1db7a7f4af14044a2f8ccf0038948580d1849c8))]
 * ✨ feat(imports): allow for auto-fix of unused imports [[40b3e63e57e474d8398ade6cf2f81648c6edeecb](https://github.com/sladg/eslint-config-base/commit/40b3e63e57e474d8398ade6cf2f81648c6edeecb))]
 * 🐛 fix(imports rule): fixed rule for banning packages, correct syntax [[4dace15ffb75a1248e667ccbbb38b9d3b3023651](https://github.com/sladg/eslint-config-base/commit/4dace15ffb75a1248e667ccbbb38b9d3b3023651))]
