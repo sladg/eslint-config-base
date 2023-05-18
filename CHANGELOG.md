@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v1.0.1](https://github.com/sladg/eslint-config-base/compare/v1.0.0...v1.0.1)
+
+* 📝 docs(prettier): improved readme, prettier example added, comment for printWidth [[644f1f1cec466e0779e3ab8c199de635dd14eb4d](https://github.com/sladg/eslint-config-base/commit/644f1f1cec466e0779e3ab8c199de635dd14eb4d))]
+
+
 ## [v1.0.0](https://github.com/sladg/eslint-config-base/compare/v0.4.1...v1.0.0)
 
 * ♻️ refactor(rule set and prettier): prettier integrated, rules extended and fixed [[8c61e41279799940aee1be7bd45bd0d370fa9e21](https://github.com/sladg/eslint-config-base/commit/8c61e41279799940aee1be7bd45bd0d370fa9e21))]
@@ -64,6 +69,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* 📝 docs(prettier): improved readme, prettier example added, comment for printWidth [[644f1f1cec466e0779e3ab8c199de635dd14eb4d](https://github.com/sladg/eslint-config-base/commit/644f1f1cec466e0779e3ab8c199de635dd14eb4d))]
 * ♻️ refactor(rule set and prettier): prettier integrated, rules extended and fixed [[8c61e41279799940aee1be7bd45bd0d370fa9e21](https://github.com/sladg/eslint-config-base/commit/8c61e41279799940aee1be7bd45bd0d370fa9e21))]
 * 🧹 chore(dependencies): upgraded to latest versions [[037d64feb14f50b2339f8861b4577ce664fed5ac](https://github.com/sladg/eslint-config-base/commit/037d64feb14f50b2339f8861b4577ce664fed5ac))]
 * ✨ feat(next): add rule for nextjs to resolve `next lint` warning about missing config [[b1db7a7f4af14044a2f8ccf0038948580d1849c8](https://github.com/sladg/eslint-config-base/commit/b1db7a7f4af14044a2f8ccf0038948580d1849c8))]
