@@ -26,9 +26,8 @@ In `.eslintrc.js`:
 
 ```js
 module.exports = {
-  ...require("@sladg/eslint-config-base/next"),
+  extends: ["@sladg/eslint-config-base/next"]
   rules: {
-    ...require("@sladg/eslint-config-base/node").rules,
     "no-console": "off",
   },
 }
@@ -40,9 +39,8 @@ In `.eslintrc.js`:
 
 ```js
 module.exports = {
-  ...require("@sladg/eslint-config-base/node"),
+  extends: ["@sladg/eslint-config-base/node"]
   rules: {
-    ...require("@sladg/eslint-config-base/node").rules,
     "no-console": "off",
   },
 }
@@ -52,17 +50,17 @@ module.exports = {
 
 Prettier is part of Eslint's configuration, see: https://github.com/prettier/eslint-plugin-prettier#options
 
-In `.eslintrc.js`:
+You can configure it with `prettier/prettier` rule in your `.eslintrc.js`:
 
 ```js
 module.exports = {
-  ...require("@sladg/eslint-config-base/node"),
   rules: {
-    ...require("@sladg/eslint-config-base/node").rules,
     "prettier/prettier": [
       "error",
       {
-        endOfLine: "auto",
+        singleQuote: true,
+        trailingComma: "all",
+        arrowParens: "always",
       },
     ],
   },

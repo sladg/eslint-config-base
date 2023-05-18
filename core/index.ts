@@ -18,7 +18,7 @@ export const defaultRules: ESLintConfig["rules"] = {
     "error",
     {
       tabWidth: 2,
-      // printWidth: 120,
+      // printWidth: 120, // Commented out as it would cause too many errors for people implementing it. This is very opinionated option.
       singleQuote: true,
       trailingComma: "all",
       bracketSpacing: true,
