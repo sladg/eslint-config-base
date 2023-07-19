@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v1.2.1](https://github.com/sladg/eslint-config-base/compare/v1.2.0...v1.2.1)
+
+* 🐛 fix(prettier): removed deprecated dependency, better typings for prettier config [[0b5a3d8589639775aee438343994426a27190d6d](https://github.com/sladg/eslint-config-base/commit/0b5a3d8589639775aee438343994426a27190d6d))]
+
+
 ## [v1.2.0](https://github.com/sladg/eslint-config-base/compare/v1.1.0...v1.2.0)
 
 * 📦 ci(pipeline): upgraded npm publish script to v2 [[32cb1b76c0ac87974ffc771006f015905955d81f](https://github.com/sladg/eslint-config-base/commit/32cb1b76c0ac87974ffc771006f015905955d81f))]
@@ -79,6 +84,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* 🐛 fix(prettier): removed deprecated dependency, better typings for prettier config [[0b5a3d8589639775aee438343994426a27190d6d](https://github.com/sladg/eslint-config-base/commit/0b5a3d8589639775aee438343994426a27190d6d))]
 * 📦 ci(pipeline): upgraded npm publish script to v2 [[32cb1b76c0ac87974ffc771006f015905955d81f](https://github.com/sladg/eslint-config-base/commit/32cb1b76c0ac87974ffc771006f015905955d81f))]
 * ✨ feat(dependencies): upgraded dependencies and added banned packages with alternatives we prefer [[30be4450c697ff79eaa9c102c043be90402c50a5](https://github.com/sladg/eslint-config-base/commit/30be4450c697ff79eaa9c102c043be90402c50a5))]
 * 📝 docs(prettier): improved readme, prettier example added, comment for printWidth [[644f1f1cec466e0779e3ab8c199de635dd14eb4d](https://github.com/sladg/eslint-config-base/commit/644f1f1cec466e0779e3ab8c199de635dd14eb4d))]
