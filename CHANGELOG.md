@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v1.1.0](https://github.com/sladg/eslint-config-base/compare/v1.0.1...v1.1.0)
+
+* ✨ feat(dependencies): upgraded dependencies and added banned packages with alternatives we prefer [[30be4450c697ff79eaa9c102c043be90402c50a5](https://github.com/sladg/eslint-config-base/commit/30be4450c697ff79eaa9c102c043be90402c50a5))]
+
+
 ## [v1.0.1](https://github.com/sladg/eslint-config-base/compare/v1.0.0...v1.0.1)
 
 * 📝 docs(prettier): improved readme, prettier example added, comment for printWidth [[644f1f1cec466e0779e3ab8c199de635dd14eb4d](https://github.com/sladg/eslint-config-base/commit/644f1f1cec466e0779e3ab8c199de635dd14eb4d))]
@@ -69,6 +74,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* ✨ feat(dependencies): upgraded dependencies and added banned packages with alternatives we prefer [[30be4450c697ff79eaa9c102c043be90402c50a5](https://github.com/sladg/eslint-config-base/commit/30be4450c697ff79eaa9c102c043be90402c50a5))]
 * 📝 docs(prettier): improved readme, prettier example added, comment for printWidth [[644f1f1cec466e0779e3ab8c199de635dd14eb4d](https://github.com/sladg/eslint-config-base/commit/644f1f1cec466e0779e3ab8c199de635dd14eb4d))]
 * ♻️ refactor(rule set and prettier): prettier integrated, rules extended and fixed [[8c61e41279799940aee1be7bd45bd0d370fa9e21](https://github.com/sladg/eslint-config-base/commit/8c61e41279799940aee1be7bd45bd0d370fa9e21))]
 * 🧹 chore(dependencies): upgraded to latest versions [[037d64feb14f50b2339f8861b4577ce664fed5ac](https://github.com/sladg/eslint-config-base/commit/037d64feb14f50b2339f8861b4577ce664fed5ac))]
