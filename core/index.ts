@@ -1,4 +1,5 @@
 import type { Linter } from "eslint"
+import type { Config as PrettierConfig } from "prettier"
 
 export type ESLintConfig = Linter.Config
 
@@ -10,6 +11,25 @@ export const defaultExtends = ["prettier"]
 
 export const defaultPlugins = ["prettier", "@typescript-eslint", "unused-imports", "simple-import-sort", "import", "sonarjs"]
 
+const prettierConfig: PrettierConfig = {
+  tabWidth: 2,
+  // printWidth: 120, // Commented out as it would cause too many errors for people implementing it. This is very opinionated option.
+  singleQuote: true,
+  trailingComma: "all",
+  bracketSpacing: true,
+  jsxBracketSameLine: false,
+  semi: false,
+  arrowParens: "always",
+  endOfLine: "lf",
+  quoteProps: "consistent",
+  useTabs: false,
+  insertPragma: false,
+  requirePragma: false,
+  proseWrap: "preserve",
+}
+
+// @TODO: Add check that rules exist.
+// @TODO: Write test to see if style is consistent beween upgrades.
 export const defaultRules: ESLintConfig["rules"] = {
   //
   // Allow eslint to use prettier internally for formatting.
@@ -17,20 +37,7 @@ export const defaultRules: ESLintConfig["rules"] = {
   "prettier/prettier": [
     "error",
     {
-      tabWidth: 2,
-      // printWidth: 120, // Commented out as it would cause too many errors for people implementing it. This is very opinionated option.
-      singleQuote: true,
-      trailingComma: "all",
-      bracketSpacing: true,
-      jsxBracketSameLine: false,
-      semi: false,
-      arrowParens: "always",
-      endOfLine: "lf",
-      quoteProps: "consistent",
-      useTabs: false,
-      insertPragma: false,
-      requirePragma: false,
-      proseWrap: "preserve",
+      ...prettierConfig,
     },
     {
       usePrettierrc: false,
