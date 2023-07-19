@@ -1,4 +1,4 @@
-import { Linter } from "eslint"
+import type { Linter } from "eslint"
 
 export type ESLintConfig = Linter.Config
 
@@ -78,6 +78,10 @@ export const defaultRules: ESLintConfig["rules"] = {
           message: "Use day.js instead of moment",
         },
         {
+          name: "date-fns",
+          message: "Use day.js instead of date-fns",
+        },
+        {
           name: "ramda",
           message: "Use lodash instead of ramda",
         },
@@ -96,6 +100,26 @@ export const defaultRules: ESLintConfig["rules"] = {
         {
           name: "yarn",
           message: "Use npm instead of yarn",
+        },
+        {
+          name: "ts-node",
+          message: "Use tsx instead of ts-node",
+        },
+        {
+          name: "tslint",
+          message: "Use eslint instead of tslint",
+        },
+        {
+          name: "prettier",
+          message: "Use eslint instead of prettier",
+        },
+        {
+          name: "aws-sdk",
+          message: "Use @aws-sdk/client-* instead of aws-sdk",
+        },
+        {
+          name: "uuid",
+          message: "Use native randomUUID() instead of uuid",
         },
       ],
       patterns: [

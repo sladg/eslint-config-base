@@ -1,7 +1,7 @@
 {
   "name": "@sladg/eslint-config-base",
   "version": "1.0.1",
-  "description": "Reusable set of rules for eslint (node) projects.",
+  "description": "Reusable set of rules for eslint (nodejs/nextjs) projects.",
   "repository": {
     "type": "git",
     "url": "https://github.com/sladg/eslint-config-base"
@@ -19,26 +19,26 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^8.35.0",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.4 || ^3.0.0",
     "typescript": "^4.9.5 || ^5.0.0"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.4.2",
-    "@typescript-eslint/eslint-plugin": "^5.59.6",
-    "@typescript-eslint/parser": "^5.59.6",
-    "eslint-config-next": "^13.4.2",
+    "@next/eslint-plugin-next": "^13.4.10",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint-config-next": "^13.4.10",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sonarjs": "^0.19.0",
-    "eslint-plugin-unused-imports": "^2.0.0"
+    "eslint-plugin-unused-imports": "^3.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "^8.37.0",
-    "@types/node": "^20.1.5",
-    "@types/prettier": "^2.7.2",
-    "tsup": "^6.7.0"
+    "@types/eslint": "^8.44.0",
+    "@types/node": "^20.4.2",
+    "@types/prettier": "^2.7.3",
+    "tsup": "^7.1.0"
   }
 }
