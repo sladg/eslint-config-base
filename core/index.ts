@@ -128,6 +128,10 @@ export const defaultRules: ESLintConfig["rules"] = {
           name: "uuid",
           message: "Use native randomUUID() instead of uuid",
         },
+        {
+          name: 'classnames',
+          message: 'Use clsx instead of classnames as it\s smaller and faster'
+        }
       ],
       patterns: [
         {
