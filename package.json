@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsup next/index.ts -d next && tsup node/index.ts -d node",
-    "commit": "npx --package cz-emoji-conventional --package commitizen -- cz",
+    "commit": "npx --package @sladg/release-utils utils commit",
     "release": "npx --package @sladg/release-utils utils shipit --gitUser @sladg --gitEmail jan@ssoukup.com --changelog"
   },
   "files": [
