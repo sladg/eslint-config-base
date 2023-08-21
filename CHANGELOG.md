@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v1.4.1](https://github.com/sladg/eslint-config-base/compare/v1.4.0...v1.4.1)
+
+* 🐛 fix(typo): export paths fixed [[1c73488ead0c7a00545dd225adae8f25f84753cf](https://github.com/sladg/eslint-config-base/commit/1c73488ead0c7a00545dd225adae8f25f84753cf))]
+
+
 ## [v1.4.0](https://github.com/sladg/eslint-config-base/compare/v1.3.1...v1.4.0)
 
 * ✨ feat(esm): improved semantices, eslint integrated to repo, esm support [[2d8e7ffc29395db0a5b26951402fb6cb18fbc827](https://github.com/sladg/eslint-config-base/commit/2d8e7ffc29395db0a5b26951402fb6cb18fbc827))]
@@ -99,6 +104,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* 🐛 fix(typo): export paths fixed [[1c73488ead0c7a00545dd225adae8f25f84753cf](https://github.com/sladg/eslint-config-base/commit/1c73488ead0c7a00545dd225adae8f25f84753cf))]
 * ✨ feat(esm): improved semantices, eslint integrated to repo, esm support [[2d8e7ffc29395db0a5b26951402fb6cb18fbc827](https://github.com/sladg/eslint-config-base/commit/2d8e7ffc29395db0a5b26951402fb6cb18fbc827))]
 * 🧹 chore(commit): commit script changed to our own, removed obsolete config [[4c3548360075237cb79a7e7907e55b6cc76ee5ff](https://github.com/sladg/eslint-config-base/commit/4c3548360075237cb79a7e7907e55b6cc76ee5ff))]
 * ✨ feat(imports): classnames deprecated in favor of clsx [[9ccccf63003c49b6b7584122ad014077a308814c](https://github.com/sladg/eslint-config-base/commit/9ccccf63003c49b6b7584122ad014077a308814c))]

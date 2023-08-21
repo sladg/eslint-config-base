@@ -1,6 +1,6 @@
 {
   "name": "@sladg/eslint-config-base",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Reusable set of rules for eslint (nodejs/nextjs) projects.",
   "repository": {
     "type": "git",
