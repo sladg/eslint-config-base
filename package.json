@@ -10,11 +10,11 @@
   "author": "Jan Soukup <jan@ssoukup.com>",
   "type": "module",
   "exports": {
-    "node": {
+    "./node": {
       "import": "./dist/node/index.js",
       "require": "./dist/node/index.cjs"
     },
-    "next": {
+    "./next": {
       "import": "./dist/next/index.js",
       "require": "./dist/next/index.cjs"
     }
