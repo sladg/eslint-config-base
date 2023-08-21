@@ -1,4 +1,11 @@
-import { defaultIgnorePatterns, defaultRules, defaultExtends, defaultParser, defaultPlugins, ESLintConfig } from "../core"
+import {
+  defaultExtends,
+  defaultIgnorePatterns,
+  defaultParser,
+  defaultPlugins,
+  defaultRules,
+  ESLintConfig,
+} from '../core'
 
 const config: ESLintConfig = {
   // @TODO: Add NextJS extension here so we overcome warnings during lint.
@@ -15,9 +22,9 @@ const config: ESLintConfig = {
   },
   settings: {
     react: {
-      version: "detect",
+      version: 'detect',
     },
   },
 }
 
-module.exports = config
+export default config

@@ -1,4 +1,11 @@
-import { defaultIgnorePatterns, defaultRules, defaultExtends, defaultParser, defaultPlugins, ESLintConfig } from "../core"
+import {
+  defaultExtends,
+  defaultIgnorePatterns,
+  defaultParser,
+  defaultPlugins,
+  defaultRules,
+  ESLintConfig,
+} from '../core'
 
 const config: ESLintConfig = {
   parser: defaultParser,
@@ -14,4 +21,4 @@ const config: ESLintConfig = {
   },
 }
 
-module.exports = config
+export default config
