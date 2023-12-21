@@ -8,9 +8,8 @@ import {
 } from '../core'
 
 const config: ESLintConfig = {
-  // @TODO: Add NextJS extension here so we overcome warnings during lint.
   parser: defaultParser,
-  extends: [...defaultExtends],
+  extends: [...defaultExtends, 'plugin:@next/next/recommended'],
   plugins: [...defaultPlugins],
   ignorePatterns: defaultIgnorePatterns,
   env: {
