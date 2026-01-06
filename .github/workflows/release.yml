@@ -29,3 +29,31 @@ jobs:
         run: npm run release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: package-artifacts
+          path: |
+            dist/**
+            package.json
+            README.md
+            LICENSE
+            CHANGELOG.md
+
+  publish:
+    needs: release
+    environment: production
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: package-artifacts
+      - name: Publish
+        uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
