@@ -7,7 +7,7 @@ Opinionated configuration for eslint & prettier.
   - [Node.js](#nodejs)
   - [React Native / Expo](#react-native--expo)
   - [Prettier](#prettier)
-  - [Optional: package.json Formatting](#optional-packagejson-formatting)
+  - [Optional: JSON Formatting (package.json, tsconfig.json)](#optional-json-formatting-packagejson-tsconfigjson)
 
 ## Usage
 
@@ -88,14 +88,14 @@ export default defineConfig([
 ])
 ```
 
-### Optional: package.json Formatting
+### Optional: JSON Formatting (package.json, tsconfig.json)
 
-For formatting and sorting `package.json` files:
+For formatting and sorting `package.json` and `tsconfig.json` files:
 
 ```js
 // eslint.config.js
 import nodeConfig from "@sladg/eslint-config-base/node"
-import packageJsonConfig from "@sladg/eslint-config-base/optional/package-json"
+import jsonConfig from "@sladg/eslint-config-base/optional/json"
 
-export default defineConfig([nodeConfig, packageJsonConfig])
+export default defineConfig([nodeConfig, jsonConfig])
 ```
