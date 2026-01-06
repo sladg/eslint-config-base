@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [22.x]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Prepare repository
         run: git fetch --unshallow --tags
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
@@ -23,6 +23,8 @@ jobs:
         run: npm ci
       - name: Build CLI
         run: npm run build
+      - name: Lint
+        run: npm run lint:check
       - name: Release
         run: npm run release
         env:
