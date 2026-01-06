@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v2.2.0](https://github.com/sladg/eslint-config-base/compare/v2.1.1...v2.2.0)
+
+* 📦 ci(split steps): allow for easier debugging and publishing in case of npm token exp [[a3002864da4190d71478080863758930211be086](https://github.com/sladg/eslint-config-base/commit/a3002864da4190d71478080863758930211be086))]
+
+
 ## [v2.1.1](https://github.com/sladg/eslint-config-base/compare/v2.1.0...v2.1.1)
 
 * 📝 docs(readme): updated readme to reflect json addon [[6c36aaa06eb501fcd68c5d8698fc500da5d7e93b](https://github.com/sladg/eslint-config-base/commit/6c36aaa06eb501fcd68c5d8698fc500da5d7e93b))]
@@ -124,6 +129,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* 📦 ci(split steps): allow for easier debugging and publishing in case of npm token exp [[a3002864da4190d71478080863758930211be086](https://github.com/sladg/eslint-config-base/commit/a3002864da4190d71478080863758930211be086))]
 * 📝 docs(readme): updated readme to reflect json addon [[6c36aaa06eb501fcd68c5d8698fc500da5d7e93b](https://github.com/sladg/eslint-config-base/commit/6c36aaa06eb501fcd68c5d8698fc500da5d7e93b))]
 * 📦 ci(upgrade): updated github actions, added lint step to ensure rules work [[ad057116fdc4246e014c3657cdc11bbd36c8b8a4](https://github.com/sladg/eslint-config-base/commit/ad057116fdc4246e014c3657cdc11bbd36c8b8a4))]
 * ✨ feat(eslint v9): restructured, flat config, extended [[9ac45e9517eb367091070b165e9daf75f23c49b2](https://github.com/sladg/eslint-config-base/commit/9ac45e9517eb367091070b165e9daf75f23c49b2))]
