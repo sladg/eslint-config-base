@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v2.4.2](https://github.com/sladg/eslint-config-base/compare/v2.4.1...v2.4.2)
+
+* 🐛 fix(dts): generate types for publish [[fe082c3c3e37c7a10c484305b3726230153298ad](https://github.com/sladg/eslint-config-base/commit/fe082c3c3e37c7a10c484305b3726230153298ad))]
+
+
 ## [v2.4.1](https://github.com/sladg/eslint-config-base/compare/v2.4.0...v2.4.1)
 
 * 🐛 fix(next): fixed duplicate conflict of react-hooks and next [[4237dccefcbc7b7829cbf63d4ee3a800eb22e225](https://github.com/sladg/eslint-config-base/commit/4237dccefcbc7b7829cbf63d4ee3a800eb22e225))]
@@ -144,6 +149,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* 🐛 fix(dts): generate types for publish [[fe082c3c3e37c7a10c484305b3726230153298ad](https://github.com/sladg/eslint-config-base/commit/fe082c3c3e37c7a10c484305b3726230153298ad))]
 * 🐛 fix(next): fixed duplicate conflict of react-hooks and next [[4237dccefcbc7b7829cbf63d4ee3a800eb22e225](https://github.com/sladg/eslint-config-base/commit/4237dccefcbc7b7829cbf63d4ee3a800eb22e225))]
 * 📦 ci(release): fixed release as GH_TOKEN cannot trigger another action [[a577a3c3befe18d43d4b5ff863059cf2616ef69b](https://github.com/sladg/eslint-config-base/commit/a577a3c3befe18d43d4b5ff863059cf2616ef69b))]
 * 📦 ci(branch matching): split yamls [[f89dbeb85847f6f5cfdbfa3283ac3b9d565015ec](https://github.com/sladg/eslint-config-base/commit/f89dbeb85847f6f5cfdbfa3283ac3b9d565015ec))]
