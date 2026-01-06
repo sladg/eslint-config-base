@@ -2,9 +2,11 @@ name: Bump version, fork a release branch, build and deploy.
 on:
   push:
     branches: ['master']
+    tags: ['v*']
 
 jobs:
-  deployment:
+  release:
+    if: github.ref == 'refs/heads/master'
     environment: production
     runs-on: ubuntu-22.04
     strategy:
@@ -21,7 +23,7 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Build CLI
+      - name: Build
         run: npm run build
       - name: Lint
         run: npm run lint:check
@@ -29,6 +31,22 @@ jobs:
         run: npm run release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: JS-DevTools/npm-publish@v2
+
+  publish:
+    if: startsWith(github.ref, 'refs/tags/v')
+    environment: production
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+      - name: Use Node.js 22.x
+        uses: actions/setup-node@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Publish
+        uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
