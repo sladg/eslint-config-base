@@ -5,7 +5,6 @@ import eslintConfigNextTs from 'eslint-config-next/typescript'
 import { defaultIgnores, defaultRules } from '../core'
 import { importsConfig } from '../core/imports'
 import { prettierConfig } from '../core/prettier'
-import { reactConfig } from '../core/react'
 import { secretsConfig } from '../core/secrets'
 import { sonarjsConfig } from '../core/sonarjs'
 import { tailwindConfig } from '../core/tailwind'
@@ -23,7 +22,7 @@ export const nextConfig = defineConfig([
   tailwindConfig,
   secretsConfig,
   sonarjsConfig,
-  reactConfig,
+  // reactConfig,
   ...eslintConfigNext,
   eslintConfigNextTs,
   defaultIgnores,
