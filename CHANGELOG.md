@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v2.0.0](https://github.com/sladg/eslint-config-base/compare/v1.4.2...v2.0.0)
+
+* ✨ feat(eslint v9): restructured, flat config, extended [[9ac45e9517eb367091070b165e9daf75f23c49b2](https://github.com/sladg/eslint-config-base/commit/9ac45e9517eb367091070b165e9daf75f23c49b2))]
+
+
 ## [v1.4.2](https://github.com/sladg/eslint-config-base/compare/v1.4.1...v1.4.2)
 
 * 🧹 chore(upgrades): all packages to latest, add nextjs rules (fix #2) [[6653b020cc136bc193a8d99328c53b2b231d9a6d](https://github.com/sladg/eslint-config-base/commit/6653b020cc136bc193a8d99328c53b2b231d9a6d))]
@@ -109,6 +114,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* ✨ feat(eslint v9): restructured, flat config, extended [[9ac45e9517eb367091070b165e9daf75f23c49b2](https://github.com/sladg/eslint-config-base/commit/9ac45e9517eb367091070b165e9daf75f23c49b2))]
 * 🧹 chore(upgrades): all packages to latest, add nextjs rules (fix #2) [[6653b020cc136bc193a8d99328c53b2b231d9a6d](https://github.com/sladg/eslint-config-base/commit/6653b020cc136bc193a8d99328c53b2b231d9a6d))]
 * 🐛 fix(typo): export paths fixed [[1c73488ead0c7a00545dd225adae8f25f84753cf](https://github.com/sladg/eslint-config-base/commit/1c73488ead0c7a00545dd225adae8f25f84753cf))]
 * ✨ feat(esm): improved semantices, eslint integrated to repo, esm support [[2d8e7ffc29395db0a5b26951402fb6cb18fbc827](https://github.com/sladg/eslint-config-base/commit/2d8e7ffc29395db0a5b26951402fb6cb18fbc827))]
