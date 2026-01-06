@@ -1,55 +1,82 @@
 {
   "name": "@sladg/eslint-config-base",
   "version": "1.4.2",
-  "description": "Reusable set of rules for eslint (nodejs/nextjs) projects.",
+  "description": "Reusable set of rules for eslint (nodejs/nextjs/react-native) projects.",
   "repository": {
     "type": "git",
     "url": "https://github.com/sladg/eslint-config-base"
   },
   "license": "MIT",
   "author": "Jan Soukup <jan@ssoukup.com>",
-  "type": "module",
   "exports": {
-    "./node": {
-      "import": "./dist/node/index.js",
-      "require": "./dist/node/index.cjs"
+    "./core": {
+      "import": "./dist/core/index.js",
+      "require": "./dist/core/index.cjs"
+    },
+    "./native": {
+      "import": "./dist/native/index.js",
+      "require": "./dist/native/index.cjs"
     },
     "./next": {
       "import": "./dist/next/index.js",
       "require": "./dist/next/index.cjs"
+    },
+    "./node": {
+      "import": "./dist/node/index.js",
+      "require": "./dist/node/index.cjs"
+    },
+    "./optional/json": {
+      "import": "./dist/optional/json/index.js",
+      "require": "./dist/optional/json/index.cjs"
     }
   },
   "files": [
     "dist"
   ],
+  "type": "module",
   "scripts": {
     "build": "tsup",
-    "lint:check": "eslint --ext .ts . && tsc --noEmit",
-    "lint:fix": "eslint --ext .ts . --fix",
     "commit": "npx --package @sladg/release-utils utils commit",
+    "lint:check": "eslint . && tsc --noEmit",
+    "lint:fix": "eslint . --fix",
     "release": "npx --package @sladg/release-utils utils shipit --gitUser @sladg --gitEmail jan@ssoukup.com --changelog"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^14.0.4",
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@typescript-eslint/parser": "^6.15.0",
-    "eslint-config-next": "^14.0.4",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-prettier": "^5.1.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-sonarjs": "^0.23.0",
-    "eslint-plugin-unused-imports": "^3.0.0"
+    "@next/eslint-plugin-next": ">=15.0.0 <17.0.0",
+    "@react-native/eslint-plugin": "^0.83.0",
+    "@stylistic/eslint-plugin": "^2.0.0",
+    "eslint-config-next": "^16.1.1",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-expo": "^0.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsonc": "^2.21.0",
+    "eslint-plugin-no-secrets": "^2.1.0",
+    "eslint-plugin-prettier": "^5.2.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "eslint-plugin-sonarjs": "^3.0.0",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "eslint-plugin-unused-imports": "^4.0.0",
+    "globals": "^15.0.0",
+    "jsonc-eslint-parser": "^2.4.2",
+    "typescript-eslint": "^8.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.0",
-    "@types/node": "^20.10.5",
-    "tsup": "^8.0.1"
+    "@tsconfig/node22": "^22.0.5",
+    "@types/eslint": "^9.6.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
-    "eslint": "8.x",
-    "prettier": "2.x || 3.x",
-    "typescript": "4.x || 5.x"
-  }
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "engineStrict": true
 }

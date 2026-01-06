@@ -1,29 +1,41 @@
-import {
-  defaultExtends,
-  defaultIgnorePatterns,
-  defaultParser,
-  defaultPlugins,
+import { defineConfig } from 'eslint/config'
+import eslintConfigNext from 'eslint-config-next/core-web-vitals'
+import eslintConfigNextTs from 'eslint-config-next/typescript'
+
+import { defaultIgnores, defaultRules } from '../core'
+import { importsConfig } from '../core/imports'
+import { prettierConfig } from '../core/prettier'
+import { reactConfig } from '../core/react'
+import { secretsConfig } from '../core/secrets'
+import { sonarjsConfig } from '../core/sonarjs'
+import { tailwindConfig } from '../core/tailwind'
+import { typescriptConfig } from '../core/typescript'
+
+/**
+ * Next.js/React ESLint configuration.
+ * Includes browser globals, React Hooks rules, Next.js rules, and TailwindCSS support.
+ */
+export const nextConfig = defineConfig([
   defaultRules,
-  ESLintConfig,
-} from '../core'
+  typescriptConfig,
+  prettierConfig,
+  importsConfig,
+  tailwindConfig,
+  secretsConfig,
+  sonarjsConfig,
+  reactConfig,
+  ...eslintConfigNext,
+  eslintConfigNextTs,
+  defaultIgnores,
+  // {
+  //   files: ['**/*.{js,jsx,ts,tsx}'],
+  //   plugins: {
+  //     '@next/next': nextPlugin,
+  //   },
+  //   rules: {
+  //     ...nextPlugin.configs.recommended.rules,
+  //   },
+  // },
+])
 
-const config: ESLintConfig = {
-  parser: defaultParser,
-  extends: [...defaultExtends, 'plugin:@next/next/recommended'],
-  plugins: [...defaultPlugins],
-  ignorePatterns: defaultIgnorePatterns,
-  env: {
-    commonjs: true,
-    browser: true,
-  },
-  rules: {
-    ...defaultRules,
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
-}
-
-export default config
+export default nextConfig

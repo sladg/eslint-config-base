@@ -1,24 +1,33 @@
-import {
-  defaultExtends,
-  defaultIgnorePatterns,
-  defaultParser,
-  defaultPlugins,
+import { defineConfig } from 'eslint/config'
+import globals from 'globals'
+
+import { defaultIgnores, defaultRules } from '../core'
+import { importsConfig } from '../core/imports'
+import { prettierConfig } from '../core/prettier'
+import { secretsConfig } from '../core/secrets'
+import { sonarjsConfig } from '../core/sonarjs'
+import { typescriptConfig } from '../core/typescript'
+
+/**
+ * Node.js ESLint configuration.
+ * Includes Node.js globals and base rules.
+ */
+export const nodeConfig = defineConfig([
   defaultRules,
-  ESLintConfig,
-} from '../core'
-
-const config: ESLintConfig = {
-  parser: defaultParser,
-  extends: [...defaultExtends],
-  plugins: [...defaultPlugins],
-  ignorePatterns: defaultIgnorePatterns,
-  env: {
-    commonjs: true,
-    node: true,
+  typescriptConfig,
+  prettierConfig,
+  importsConfig,
+  secretsConfig,
+  sonarjsConfig,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        ...globals.builtin,
+      },
+    },
   },
-  rules: {
-    ...defaultRules,
-  },
-}
+  defaultIgnores,
+])
 
-export default config
+export default nodeConfig
