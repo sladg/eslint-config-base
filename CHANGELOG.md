@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v2.4.0](https://github.com/sladg/eslint-config-base/compare/v2.3.0...v2.4.0)
+
+* 📦 ci(release): fixed release as GH_TOKEN cannot trigger another action [[a577a3c3befe18d43d4b5ff863059cf2616ef69b](https://github.com/sladg/eslint-config-base/commit/a577a3c3befe18d43d4b5ff863059cf2616ef69b))]
+
+
 ## [v2.3.0](https://github.com/sladg/eslint-config-base/compare/v2.2.0...v2.3.0)
 
 * 📦 ci(branch matching): split yamls [[f89dbeb85847f6f5cfdbfa3283ac3b9d565015ec](https://github.com/sladg/eslint-config-base/commit/f89dbeb85847f6f5cfdbfa3283ac3b9d565015ec))]
@@ -134,6 +139,7 @@
 
 ## [v0.0.1](https://github.com/sladg/eslint-config-base/compare/v0.0.1)
 
+* 📦 ci(release): fixed release as GH_TOKEN cannot trigger another action [[a577a3c3befe18d43d4b5ff863059cf2616ef69b](https://github.com/sladg/eslint-config-base/commit/a577a3c3befe18d43d4b5ff863059cf2616ef69b))]
 * 📦 ci(branch matching): split yamls [[f89dbeb85847f6f5cfdbfa3283ac3b9d565015ec](https://github.com/sladg/eslint-config-base/commit/f89dbeb85847f6f5cfdbfa3283ac3b9d565015ec))]
 * 📦 ci(split steps): allow for easier debugging and publishing in case of npm token exp [[a3002864da4190d71478080863758930211be086](https://github.com/sladg/eslint-config-base/commit/a3002864da4190d71478080863758930211be086))]
 * 📝 docs(readme): updated readme to reflect json addon [[6c36aaa06eb501fcd68c5d8698fc500da5d7e93b](https://github.com/sladg/eslint-config-base/commit/6c36aaa06eb501fcd68c5d8698fc500da5d7e93b))]
